@@ -1,5 +1,7 @@
 # C-Sharp
 C# simple tasks with solutions
+
+
 Programy napisane w:
 Microsoft Visual Studio Comunity 2019
 Wersja 16.3.10

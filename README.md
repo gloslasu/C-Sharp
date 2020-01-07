@@ -7,7 +7,7 @@ Microsoft Visual Studio Comunity 2019
 Wersja 16.3.10
 
 
-Zadanie 1:
+Zadanie 1 - warsztat:
 
 Proszę o przygotowanie aplikacji rozliczającej proces obsługi klientów warsztatu samochodowego specjalizującego się w montażu i serwisowaniu instalacji auto gaz. Warsztat, który zlecił wytworzenie wymaganego oprogramowania rozlicza klientów naliczając u
 staloną stawkę za każdą wykonaną czynność zgodnie z cennikiem. Czynności wykonywane przez serwis:

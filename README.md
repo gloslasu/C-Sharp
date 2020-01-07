@@ -7,7 +7,6 @@ Zadanie 1:
 Proszę o przygotowanie aplikacji rozliczającej proces obsługi klientów warsztatu samochodowego specjalizującego się w montażu i serwisowaniu instalacji auto gaz. Warsztat, który zlecił wytworzenie wymaganego oprogramowania rozlicza klientów naliczając ustaloną stawkę za każdą wykonaną czynność zgodnie z cennikiem. Czynności wykonywane przez serwis:
 
     •	„Montaż instalacji LPG”;
- 
     •	„Przegląd instalacji LPG”;
     •	„Regulacja matrycy wartości wtrysku”;
     •	„Wymiana filtra gazu”;
@@ -20,5 +19,6 @@ Proszę przygotować przycisk „PODSUMUJ”. Naciśnięcie tego przycisku przez
 Jeśli całkowita należność obliczona dla Klienta przekroczy kwotę 300 zł proszę zastosować rabat w wysokości 10%. Proszę wyświetlić zarówno łączną sumę kosztów, wysokość rabatu oraz należność po rabacie. Proszę także umieścić przycisk „Nowy klient” który wyczyści zaznaczone wartości i ukryje wyświetlane kwoty należności, rabatu itp.
 
  Uwagi dodatkowe:
+ 
     •	twórca aplikacji nie wpisuje pozycji cennikowych do programu. Uzupełnienie cennika stanowi obowiązek kierownika serwisu;
     •	nazwy i lista czynności serwisowych mają być na stałe wpisane do aplikacji.

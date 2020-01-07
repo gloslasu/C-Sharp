@@ -5,7 +5,9 @@ C# simple tasks with solutions
 Zadanie 1:
 
 Proszę o przygotowanie aplikacji rozliczającej proces obsługi klientów warsztatu samochodowego specjalizującego się w montażu i serwisowaniu instalacji auto gaz. Warsztat, który zlecił wytworzenie wymaganego oprogramowania rozlicza klientów naliczając ustaloną stawkę za każdą wykonaną czynność zgodnie z cennikiem. Czynności wykonywane przez serwis:
+
     •	„Montaż instalacji LPG”;
+ 
     •	„Przegląd instalacji LPG”;
     •	„Regulacja matrycy wartości wtrysku”;
     •	„Wymiana filtra gazu”;

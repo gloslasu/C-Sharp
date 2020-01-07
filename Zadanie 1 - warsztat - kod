@@ -1,0 +1,108 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace warsztat
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            decimal cena_mmont_LPG, cena_przeg_LPG, cena_reg_mat, cena_wym_pow, cena_wym_gazu;
+
+            cena_mmont_LPG = numericUpDown1.Value;
+            cena_przeg_LPG = numericUpDown2.Value;
+            cena_reg_mat = numericUpDown3.Value;
+            cena_wym_pow = numericUpDown4.Value;
+            cena_wym_gazu = numericUpDown5.Value;
+
+            decimal koszt, rabat, po_rabacie;
+            koszt = 0;
+
+
+            if (checkBox1.Checked)
+            {
+                koszt = cena_mmont_LPG;
+            }
+
+            if (checkBox2.Checked)
+            {
+                koszt = koszt + cena_przeg_LPG;
+            }
+            if (checkBox3.Checked)
+            {
+                koszt = koszt + cena_reg_mat;
+            }
+            if (checkBox4.Checked)
+            {
+                koszt = koszt + cena_wym_pow;
+            }
+            if (checkBox5.Checked)
+            {
+                koszt = koszt + cena_wym_gazu;
+            }
+
+            decimal zeruj_rabat = 0;
+
+            label6_bez_rabatu.Text = koszt.ToString("0.00");
+
+// jeśli w poprzedniej kalkulacji mieliśmy naliczony rabat to przed nową kalkulacją musimy wyczyścić labele i wyzerowac naliczone wcześniej labele
+            label8_koszt_po_rabacie.Text = zeruj_rabat.ToString("0.00");
+
+            rabat = koszt * 0.10M;
+
+            po_rabacie = koszt - rabat;
+
+            if (koszt >= 300M)
+            {
+                label7_naliczony_rabat.Text = rabat.ToString("0.00");
+                label8_koszt_po_rabacie.Text = po_rabacie.ToString("0.00");
+            }
+            else 
+            {
+                rabat = 0M;
+                label7_naliczony_rabat.Text = rabat.ToString("0.00");
+             
+            }
+        }
+
+// czyścimy formularz po kliknięciu przycisku nowy klient
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            label6_bez_rabatu.Text = "Koszt bez rabatu";
+            label7_naliczony_rabat.Text = "Naliczony rabat";
+            label8_koszt_po_rabacie.Text = "Koszt po rabacie";
+
+            numericUpDown1.Value = 0;
+            numericUpDown2.Value = 0;
+            numericUpDown3.Value = 0;
+            numericUpDown4.Value = 0;
+            numericUpDown5.Value = 0;
+
+            if (checkBox1.Checked || checkBox2.Checked || checkBox3.Checked || checkBox4.Checked || checkBox5.Checked == true)
+            {
+                checkBox1.Checked = false;
+                checkBox2.Checked = false;
+                checkBox3.Checked = false;
+                checkBox4.Checked = false;
+                checkBox5.Checked = false;
+            }
+
+        }
+    }
+}

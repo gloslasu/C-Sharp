@@ -47,4 +47,14 @@ Utwórz dwa pola do wprowadzania tekstu, w którym użytkownik aplikacji będzie
 Dodaj jeszcze dwa przyciski. Jeden do kasowania z listy zaznaczonych elementów a drugi do czyszczenia wszystkich elementów listy. 
 
 
+Zadanie 4 - ryneczek
+
+Aplikacja do sprzedawania jabłek, wyliczania ceny i podawania reszty. 
+Cena jednego kilograma jabłek na ryneczku to 1,5 zł. W aplikacji masz podać jaką ilość chcesz kupić i ile pieniędzy przekazujesz sprzedawcy. Po ustaleniu wagi i wpłaty i kliknięciu przycisku oblicz aplikacja ma:
+
+- podać kwotę jaką trzeba uiścić za tyle kilogramów jabłek jakie chcemy kupić;
+- podać kwotę reszty jeśli wpłaciliśmy za dużo lub 
+- podać kwotę jaką powinniśmy uiścić jeśli wpłaciliśmy za mało.
+
+
 

@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace fotorarar_1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add( (int) numericUpDown1.Value);
+
+            int dozwolona_predkosc = (int)numericUpDown2.Value;
+            int ile_prawidlowo = 0;
+
+
+            foreach (int pomiar in listBox1.Items)
+                if (pomiar <= dozwolona_predkosc)
+                {
+                    ile_prawidlowo++;
+                }
+
+            int ile_procent_prawidlowo = ile_prawidlowo * 100 / listBox1.Items.Count;
+            label3_prawidlowo.Text = ile_procent_prawidlowo.ToString("0") + " %";
+
+            int ile_zabranych = 0;
+            foreach (int pomiar in listBox1.Items)
+                if (pomiar > dozwolona_predkosc +50 && checkBox1.Checked)
+                {
+                    ile_zabranych++;
+                }
+            label4_zabrane.Text = ile_zabranych.ToString("0");
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace premia
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int czas = (int) numericUpDown1.Value;
+            listBox1.Items.Add(czas);
+
+            int ile_spoznien = 0;
+
+            foreach (int spoznienie in listBox1.Items)
+                if (spoznienie > 15)
+                    ile_spoznien++;
+
+            decimal podstawa = 1800m, wyplata, bonus;
+
+            bonus = 200m - 50m * (decimal)ile_spoznien;
+            wyplata = podstawa + bonus;
+
+            if (wyplata < 1800)
+                wyplata = 1800;
+            label3_wyplata.Text = wyplata.ToString("0.00");
+
+
+        }
+    }
+}

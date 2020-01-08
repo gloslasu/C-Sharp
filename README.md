@@ -57,4 +57,12 @@ Cena jednego kilograma jabłek na ryneczku to 1,5 zł. W aplikacji masz podać j
 - podać kwotę jaką powinniśmy uiścić jeśli wpłaciliśmy za mało.
 
 
+Zadanie 5 - premia
+
+Masz za zadanie stworzenia aplikacji, w której pracownicy będą rejestrować swoją godzinę przyjścia do pracy. Zakładamy, że każdy pracownik jest uczciwy i w aplikacji codziennie podaje swoją prawdziwą godzinę przyjścia. 
+Płaca zasadnicza wynosi 1800 zł na rękę. Pracownik może otrzymać premię miesięczną w wysokości max 200 zł jeśli codziennie przychodzi na czas. Za każde spóźnienie powyżej 15 minut po godzinie 8:00 z premii 200 zł potrącane jest mu 50 zł. 
+Stwórz aplikację wyliczającą wypłatę dla pracownika, w której na stałe będzie podana godzina 8, a pracownik będzie mógł tylko zmienić minutę przyjścia. Dodaj przycisk o nazwie „Dodaj” po kliknięciu, którego podana przez pracownika minuta przyjścia doda się do listy. Po kliknięciu przycisku dodaj, aplikacja ma automatycznie sprawdzać elementy dodane do listy i na podstawie zarejestrowanych minut przyjścia do pracy wyświetlać w labelu informację ile pracownik dostanie wypłaty na rękę. 
+
+
+
 
